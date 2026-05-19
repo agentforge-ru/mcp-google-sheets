@@ -1,5 +1,10 @@
 # mcp-google-sheets
 
+[![CI](https://github.com/agentforge-ru/mcp-google-sheets/actions/workflows/ci.yml/badge.svg)](https://github.com/agentforge-ru/mcp-google-sheets/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-compatible-purple)](https://modelcontextprotocol.io)
+
 A **focused MCP server for Google Sheets** — read/write tools for Claude to operate on your spreadsheets without copy-pasting cells back and forth.
 
 > If you've ever asked Claude "look at this Google Sheet and tell me X" and then pasted 200 rows of data into the chat — this is for you.
