@@ -4,6 +4,21 @@ A **focused MCP server for Google Sheets** — read/write tools for Claude to op
 
 > If you've ever asked Claude "look at this Google Sheet and tell me X" and then pasted 200 rows of data into the chat — this is for you.
 
+---
+
+## 🇷🇺 На русском
+
+**Кому это подойдёт:**
+- У тебя **бизнес-данные в Google Sheets** и ты хочешь чтобы Claude/AI мог с ними работать напрямую (без выгрузки в CSV каждый раз)
+- Ты автоматизируешь **отчёты, CRM-наполнение, контент-таблицы** и хочешь дать AI доступ под service-account
+- Тебе нужна **кастомная версия** с дополнительными tools (например, специфичные форматы, кастомная фильтрация, формулы)
+
+**Что внутри:** Python-сервер на ~250 строк, авторизация через Google Service Account, безопасность (запрет whole-column перезаписи), готовая инструкция настройки service-account за 5 минут, рабочий config для Claude Desktop.
+
+**Заказать кастомную версию** (под твою специфическую таблицу, набор tools, или интеграцию с CRM): [Kwork → agentforge_ru](https://kwork.ru/user/agentforge_ru) — от 3 500 ₽, сроки 3 дня.
+
+---
+
 ## Why this exists
 
 Claude is great at analyzing tabular data. But getting that data into the chat reliably is painful:
