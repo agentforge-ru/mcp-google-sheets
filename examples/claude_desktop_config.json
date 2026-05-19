@@ -1,0 +1,13 @@
+{
+  "_comment": "Drop this block into Claude Desktop config. macOS: ~/Library/Application Support/Claude/claude_desktop_config.json | Windows: %APPDATA%/Claude/claude_desktop_config.json. Replace the path with the absolute path to your service account JSON. Restart Claude Desktop afterwards.",
+
+  "mcpServers": {
+    "sheets": {
+      "command": "python",
+      "args": ["-m", "mcp_google_sheets"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/absolute/path/to/your/service-account.json"
+      }
+    }
+  }
+}

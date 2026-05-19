@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-google-sheets"
+version = "0.1.0"
+description = "MCP server for Google Sheets: read/write/append tools for Claude and other MCP clients"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "agentforge_ru", email = "agentforge-ru@users.noreply.github.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "google-api-python-client>=2.0.0",
+    "google-auth>=2.0.0",
+    "google-auth-httplib2>=0.2.0",
+]
+keywords = ["mcp", "google-sheets", "claude", "ai", "subagent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentforge-ru/mcp-google-sheets"
+Issues = "https://github.com/agentforge-ru/mcp-google-sheets/issues"
+
+[project.scripts]
+mcp-google-sheets = "mcp_google_sheets.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
